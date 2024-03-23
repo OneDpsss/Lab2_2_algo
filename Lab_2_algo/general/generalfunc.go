@@ -23,7 +23,7 @@ func ReadData() (Rectangles, Points, error) {
 	if _, err := fmt.Scanf("%d\n", &m); err != nil {
 		return nil, nil, fmt.Errorf("wrong data format")
 	}
-	for i := 0; i < n; i++ {
+	for i := 0; i < m; i++ {
 		var x, y int
 		if _, err := fmt.Scanf("%d %d\n", &x, &y); err != nil {
 			return nil, nil, fmt.Errorf("wrong data format")
@@ -31,4 +31,8 @@ func ReadData() (Rectangles, Points, error) {
 		p = append(p, Point{X: x, Y: y})
 	}
 	return r, p, nil
+}
+
+func (r Rectangle) Belongs(p Point) bool {
+	return (p.X >= r.LB.X && p.X < r.RU.X) && (p.Y >= r.LB.Y && p.Y < r.RU.Y)
 }
