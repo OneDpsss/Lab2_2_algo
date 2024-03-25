@@ -2,7 +2,7 @@ package main
 
 import (
 	"Lab_2_algo/general"
-	"Lab_2_algo/src"
+	solve "Lab_2_algo/solutions"
 )
 
 func main() {
@@ -10,7 +10,7 @@ func main() {
 	if err != nil {
 		return
 	}
-	src.CompressCoordinates(r, p)
+	solve.CompressCoordinates(r, p)
 }
 
 //Прямоугольники: {(2,2),(6,8)}, {(5,4),(9,10)}, {(4,0),(11,6)}, {(8,2),(12,12)}
