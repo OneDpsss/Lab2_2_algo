@@ -4,6 +4,14 @@ import (
 	"fmt"
 )
 
+func Keys[M ~map[K]V, K comparable, V any](m M) []K {
+	r := make([]K, 0, len(m))
+	for k := range m {
+		r = append(r, k)
+	}
+	return r
+}
+
 func ReadData() (Rectangles, Points, error) {
 	var n, m int
 	var r Rectangles
@@ -33,6 +41,16 @@ func ReadData() (Rectangles, Points, error) {
 	return r, p, nil
 }
 
-func (r Rectangle) Belongs(p Point) bool {
-	return (p.X >= r.LB.X && p.X < r.RU.X) && (p.Y >= r.LB.Y && p.Y < r.RU.Y)
+func BinSearch(a []int, k int) int {
+	l := 0
+	r := len(a)
+	for l < r {
+		m := (r + l) / 2
+		if k >= a[m] {
+			l = m + 1
+		} else {
+			r = m
+		}
+	}
+	return l - 1
 }
