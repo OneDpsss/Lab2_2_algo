@@ -10,7 +10,7 @@ func main() {
 	if err != nil {
 		return
 	}
-	solve.CompressCoordinates(r, p)
+	solve.PersistenceSegmentTree(r, p)
 }
 
 //Прямоугольники: {(2,2),(6,8)}, {(5,4),(9,10)}, {(4,0),(11,6)}, {(8,2),(12,12)}

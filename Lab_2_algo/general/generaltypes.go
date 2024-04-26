@@ -67,3 +67,17 @@ func (r Rectangles) Compress() ([]int, []int) {
 
 type Rectangles []Rectangle
 type Points []Point
+
+type Event struct {
+	X, YStart, YEnd int
+	IsBegin         int
+}
+
+func NewEvent(x, yStart, yEnd, isBegin int) Event {
+	return Event{
+		X:       x,
+		YStart:  yStart,
+		YEnd:    yEnd,
+		IsBegin: isBegin,
+	}
+}
