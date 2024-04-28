@@ -56,12 +56,8 @@ func (r Rectangles) Compress() ([]int, []int) {
 	for k := range CompYset {
 		CompY = append(CompY, k)
 	}
-	sort.Slice(CompX, func(i, j int) bool {
-		return CompX[i] < CompX[j]
-	})
-	sort.Slice(CompY, func(i, j int) bool {
-		return CompY[i] < CompY[j]
-	})
+	sort.Ints(CompX)
+	sort.Ints(CompY)
 	return CompX, CompY
 }
 
@@ -69,15 +65,14 @@ type Rectangles []Rectangle
 type Points []Point
 
 type Event struct {
-	X, YStart, YEnd int
-	IsBegin         int
+	X, StartY, EndY, State int
 }
 
 func NewEvent(x, yStart, yEnd, isBegin int) Event {
 	return Event{
-		X:       x,
-		YStart:  yStart,
-		YEnd:    yEnd,
-		IsBegin: isBegin,
+		X:      x,
+		StartY: yStart,
+		EndY:   yEnd,
+		State:  isBegin,
 	}
 }
