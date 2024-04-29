@@ -233,14 +233,14 @@ func Benchmark(n int) (Rectangles, Points) {
 ```
 ### Графики
 
-#### бщее время
+#### Общее время
 
 -<img width="434" alt="image" src="https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/e2a54e45-b18d-420a-b304-54f1f76a5c2e">
 
 
 #### Время на предобработку
 
-- <img width="434" alt="image" src="https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/5955e995-07e7-4312-b620-c82b2f353ded">
+-<img width="434" alt="image" src="https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/5955e995-07e7-4312-b620-c82b2f353ded">
 
 
 
