@@ -1,5 +1,5 @@
-##login:vsshavlyagin@edu.hse.ru
-##![image](https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/660ad2c4-35a5-4627-ad61-7085753bd1e0)
+## login:vsshavlyagin@edu.hse.ru
+## ![image](https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/660ad2c4-35a5-4627-ad61-7085753bd1e0)
 
 
 ## Лабораторная работа №2: Проверка принадлежности точек прямоугольникам
