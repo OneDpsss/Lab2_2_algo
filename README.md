@@ -238,8 +238,8 @@ func Benchmark(n int) (Rectangles, Points) {
 
 #### Время на предобработку
 
-- 
-- 
+- <img width="434" alt="image" src="https://github.com/OneDpsss/Lab2_2_algo/assets/108849165/5955e995-07e7-4312-b620-c82b2f353ded">
+
 
 
 
