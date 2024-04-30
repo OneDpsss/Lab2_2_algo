@@ -1,7 +1,6 @@
 package general
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -29,7 +28,7 @@ func (r *Rectangles) CompressedMap() ([]int, []int, [][]int) {
 		ly := BinSearch(CompY, rect.LB.Y)
 		rx := BinSearch(CompX, rect.RU.X+1)
 		ry := BinSearch(CompY, rect.RU.Y+1)
-		fmt.Println(lx, ly, rx, ry)
+		//fmt.Println(lx, ly, rx, ry)
 		for i := ly; i < ry; i++ {
 			for j := lx; j < rx; j++ {
 				mp[i][j]++

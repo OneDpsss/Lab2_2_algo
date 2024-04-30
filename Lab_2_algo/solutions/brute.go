@@ -2,7 +2,6 @@ package src
 
 import (
 	"Lab_2_algo/general"
-	"fmt"
 )
 
 func CheckPoint(p general.Point, r *general.Rectangles) int {
@@ -17,7 +16,7 @@ func CheckPoint(p general.Point, r *general.Rectangles) int {
 
 func BruteForce(ps general.Points, r general.Rectangles) {
 	for _, p := range ps {
-		ans := CheckPoint(p, &r)
-		fmt.Println(p, ans)
+		CheckPoint(p, &r)
+
 	}
 }

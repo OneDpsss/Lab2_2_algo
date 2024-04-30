@@ -117,8 +117,8 @@ func BuildPerstitentTree(rectangles general.Rectangles) []*Node {
 	return roots
 }
 
-func SolveTree(roots []*Node, points general.Points) []int {
-	answer := make([]int, len(points))
+func SolveTree(roots []*Node, points general.Points) {
+	//answer := make([]int, len(points))
 	ptr := 0
 	for _, point := range points {
 		xPos := BinarySearch(xValues, point.X)
@@ -127,8 +127,7 @@ func SolveTree(roots []*Node, points general.Points) []int {
 			ptr++
 			continue
 		}
-		answer[ptr] = BinSearchTree(roots[xPos], yPos)
+		//		answer[ptr] = BinSearchTree(roots[xPos], yPos)
 		ptr++
 	}
-	return answer
 }
